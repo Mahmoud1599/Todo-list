@@ -1,0 +1,30 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Todo App</title>
+</head>
+<body>
+    <div id="app">
+        <div id="user-profile">
+            <label for="todo-label">Todo Label:</label>
+            <input type="text" id="todo-label" placeholder="Todo Label">
+            <label for="theme-select">Select Theme:</label>
+            <select id="theme-select">
+                <option value="default">Default</option>
+                <option value="theme1">Theme 1</option>
+                <option value="theme2">Theme 2</option>
+                <option value="theme3">Theme 3</option>
+                <option value="theme4">Theme 4</option>
+                <!-- Add more theme options as needed -->
+            </select>
+            <button onclick="createTodoList()">Create Todo List</button>
+        </div>
+        <div id="todo-lists"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
